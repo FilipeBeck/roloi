@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2048"
+   height="2048"
+   viewBox="0 0 541.86666 541.86668"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="play.svg"
+   inkscape:export-filename="/home/beck/Documents/Develop/Roloi/src/components/assets/play.png"
+   inkscape:export-xdpi="2.8733726"
+   inkscape:export-ydpi="2.8733726">
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1137"
+       x="-0.0036531233"
+       width="1.0073062"
+       y="-0.0035476494"
+       height="1.0070953">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.13137247"
+         id="feGaussianBlur1139" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.175"
+     inkscape:cx="1093.5494"
+     inkscape:cy="1083.7842"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1099"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,244.86668)">
+    <g
+       id="g1099"
+       transform="matrix(3.1091662,0,0,3.0361886,-191.53889,-289.34069)"
+       style="filter:url(#filter1137)">
+      <ellipse
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.08611447;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path1502"
+         cx="148.74478"
+         cy="103.88266"
+         rx="84.675461"
+         ry="86.710716"
+         inkscape:export-filename="/home/beck/Documents/Develop/Roloi/src/components/assets/clock.png"
+         inkscape:export-xdpi="2.3399999"
+         inkscape:export-ydpi="2.3399999" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.07681576px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 112.16857,46.359906 V 161.40541 l 95.92283,-57.52275 z"
+         id="path1641"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </g>
+  </g>
+</svg>
