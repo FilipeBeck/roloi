@@ -16,6 +16,7 @@ import { PlayerView } from './src/components/PlayerView'
 import { Clock, PREFIX_DATE } from './src/components/Clock'
 import I18n from 'i18n-js'
 import { loadSound, playSound } from './src/lib'
+import KeepAwake from 'react-native-keep-awake'
 
 const { UIManager, I18nManager } = NativeModules
 
@@ -44,7 +45,7 @@ class App extends React.Component<{}, App.State> {
 
   public handleChangeClockConfig(hours: number, minutes: number): void {
     const isZeroTime = !hours && !minutes
-    const increment =  isZeroTime ? 0 : this.state.config.clock.increment
+    const increment = isZeroTime ? 0 : this.state.config.clock.increment
 
     this.setState({
       config: {
@@ -71,6 +72,8 @@ class App extends React.Component<{}, App.State> {
         black: new Date(`${PREFIX_DATE} ${this.state.config.clock.hours}:${this.state.config.clock.minutes}`).getTime()
       },
     })
+
+    KeepAwake.activate()
   }
 
   public handleStop(): void {
@@ -82,6 +85,8 @@ class App extends React.Component<{}, App.State> {
       turnSide: 'white',
       isPlaying: false
     })
+
+    KeepAwake.deactivate()
   }
 
   public handleClockTimeEllapsed(refreshRate: number): void {

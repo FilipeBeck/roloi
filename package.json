@@ -15,6 +15,7 @@
     "react": "16.9.0",
     "react-native": "0.61.2",
     "react-native-android-dialog-picker": "^0.1.0",
+    "react-native-keep-awake": "^4.0.0",
     "react-native-sound": "^0.11.0",
     "vanilla-x": "^1.0.0"
   },
@@ -26,6 +27,7 @@
     "@types/jest": "^24.0.18",
     "@types/react": "16.9.0",
     "@types/react-native": "^0.60.17",
+    "@types/react-native-keep-awake": "^2.0.2",
     "@types/react-test-renderer": "16.9.0",
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
