@@ -1,6 +1,8 @@
 import { Alert } from 'react-native'
 import Sound from 'react-native-sound'
 
+Sound.setCategory('Playback')
+
 export async function loadSound(path: any): Promise<Sound> {
 	return new Promise((resolve, reject) => {
 		const sound = new Sound(path, error => {

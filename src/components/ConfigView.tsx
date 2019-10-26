@@ -1,6 +1,6 @@
 import Layout from './ConfigView.layout'
 import React, { useMemo, useCallback, useState } from 'react'
-import { View, Text, TimePickerAndroid, TouchableNativeFeedback, Image, Animated, GestureResponderEvent, Alert, TouchableWithoutFeedback } from 'react-native'
+import { View, Text, TimePickerAndroid, TouchableNativeFeedback, Image, Animated, TouchableWithoutFeedback } from 'react-native'
 import DialogPicker from 'react-native-android-dialog-picker'
 import I18n from 'i18n-js'
 import { loadSound, playSound } from '../lib'
@@ -85,17 +85,19 @@ export const ConfigView: React.FC<ConfigView.Props> = props => {
 		setStopAnimation(new Animated.Value(1))
 	}, [setStopping, setStopAnimation])
 
+	const missingDeclarationProps = { touchSoundDisabled: true } as any
+
 	return <View style={Layout.ConfigView}>
 		<View>
 			<Animated.View style={{ flex: 1, opacity: stopAnimation }}>
 				<View style={[Layout.clockView, Layout.bordered]}>
-					<TouchableNativeFeedback touchSoundDisabled={true} disabled={playing} onPress={handleTimeConfig}>
+					<TouchableNativeFeedback {...missingDeclarationProps} disabled={playing} onPress={handleTimeConfig}>
 						<View style={[{ flexDirection: 'row', alignItems: 'center' }, { padding: 5 }]}>
 							<Image style={Layout.clockViewTimeImage} source={require('./assets/clock.png')} />
 							<Text style={Layout.clockViewTimeText}>{serializedTime}</Text>
 						</View>
 					</TouchableNativeFeedback>
-					<TouchableNativeFeedback touchSoundDisabled={true} disabled={playing || isZeroTime} onPress={handleIncrementConfig}>
+					<TouchableNativeFeedback {...missingDeclarationProps} disabled={playing || isZeroTime} onPress={handleIncrementConfig}>
 						<View style={{ flexDirection: 'row', alignItems: 'center', opacity: isZeroTime && 0.5 || 1.0 }}>
 							<Image style={[Layout.clockViewIncrementImage, { marginLeft: 10 }]} source={require('./assets/increment.png')} />
 							<Text style={Layout.clockViewTimeText}>{serializedIncrement}</Text>
@@ -104,7 +106,7 @@ export const ConfigView: React.FC<ConfigView.Props> = props => {
 				</View>
 			</Animated.View>
 		</View>
-		<TouchableWithoutFeedback touchSoundDisabled={true} style={Layout.playView} onPress={handlePlay} onPressIn={handleStopIn} onPressOut={handleStopOut}>
+		<TouchableWithoutFeedback {...missingDeclarationProps} style={Layout.playView} onPress={handlePlay} onPressIn={handleStopIn} onPressOut={handleStopOut}>
 			<Image source={playImageURL}/>
 		</TouchableWithoutFeedback>
 	</View>
